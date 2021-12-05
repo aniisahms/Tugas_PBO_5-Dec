@@ -49,6 +49,30 @@ public class JavaFXApplication2_5Dec extends Application {
         root.setHgap(20); 
         root.setAlignment(Pos.CENTER);
         
+        GridPane.setFillWidth(firstName, true);
+        firstName.setMaxWidth(Double.MAX_VALUE);
+        firstName.setAlignment(Pos.CENTER_RIGHT);
+        
+        GridPane.setFillWidth(lastName, true);
+        lastName.setMaxWidth(Double.MAX_VALUE);
+        lastName.setAlignment(Pos.CENTER_RIGHT);
+        
+        GridPane.setFillWidth(email, true);
+        email.setMaxWidth(Double.MAX_VALUE);
+        email.setAlignment(Pos.CENTER_RIGHT);
+        
+        GridPane.setFillWidth(contact, true);
+        contact.setMaxWidth(Double.MAX_VALUE);
+        contact.setAlignment(Pos.CENTER_RIGHT);
+        
+        GridPane.setFillWidth(pw, true);
+        pw.setMaxWidth(Double.MAX_VALUE);
+        pw.setAlignment(Pos.CENTER_RIGHT);
+        
+        GridPane.setFillWidth(confirmPw, true);
+        confirmPw.setMaxWidth(Double.MAX_VALUE);
+        confirmPw.setAlignment(Pos.CENTER_RIGHT);
+        
         root.add(firstName, 0, 0);
         root.add(tf1, 1, 0);
         
