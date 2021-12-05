@@ -13,6 +13,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
+import javafx.scene.shape.Rectangle;
 import javafx.stage.Stage;
 
 /**
@@ -25,6 +26,10 @@ public class JavaFXApplication2_5Dec extends Application {
     public void start(Stage primaryStage) {
         Button btn = new Button();
         btn.setText("Register");
+        
+        Label register = new Label("Register");
+        Rectangle rect = new Rectangle(5,95,150,30);
+        rect.setFill(Color.BLACK);
         
         Label firstName = new Label("First Name");
         TextField tf1 = new TextField();
@@ -73,26 +78,30 @@ public class JavaFXApplication2_5Dec extends Application {
         confirmPw.setMaxWidth(Double.MAX_VALUE);
         confirmPw.setAlignment(Pos.CENTER_RIGHT);
         
-        root.add(firstName, 0, 0);
-        root.add(tf1, 1, 0);
+        root.add(rect, 0, 0);
+        root.add(register, 0, 0);
         
-        root.add(lastName, 0, 1);
-        root.add(tf2, 1, 1);
+        root.add(firstName, 0, 1);
+        root.add(tf1, 1, 1);
         
-        root.add(email, 0, 2);
-        root.add(tf3, 1, 2);
+        root.add(lastName, 0, 2);
+        root.add(tf2, 1, 2);
         
-        root.add(contact, 0, 3);
-        root.add(tf4, 1, 3);
+        root.add(email, 0, 3);
+        root.add(tf3, 1, 3);
         
-        root.add(pw, 0, 4);
-        root.add(tf5, 1, 4);
+        root.add(contact, 0, 4);
+        root.add(tf4, 1, 4);
         
-        root.add(confirmPw, 0, 5);
-        root.add(tf6, 1, 5);
+        root.add(pw, 0, 5);
+        root.add(tf5, 1, 5);
         
-        root.add(btn, 1, 6);
+        root.add(confirmPw, 0, 6);
+        root.add(tf6, 1, 6);
         
+        root.add(btn, 1, 7);
+        
+        register.setTextFill(Color.WHITE);
         btn.setTextFill(Color.WHITE);
         btn.setStyle("-fx-background-color: blue;");
         
