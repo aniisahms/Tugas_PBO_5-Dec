@@ -6,14 +6,13 @@
 package javafxapplication2_5dec;
 
 import javafx.application.Application;
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
+import javafx.scene.paint.Color;
 import javafx.stage.Stage;
 
 /**
@@ -69,6 +68,9 @@ public class JavaFXApplication2_5Dec extends Application {
         root.add(tf6, 1, 5);
         
         root.add(btn, 1, 6);
+        
+        btn.setTextFill(Color.WHITE);
+        btn.setStyle("-fx-background-color: blue;");
         
         Scene scene = new Scene(root, 300, 250);
         
